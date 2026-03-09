@@ -12,6 +12,7 @@ import java.time.LocalDate;
 @Data
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
     @Column(unique = true)
